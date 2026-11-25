@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f3e8ff 0%, #fce7f3 100%);
+    color: #581c87;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Notifikasi Mengambang */
+.toast {
+    position: fixed;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f472b6;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(244, 114, 182, 0.3);
+    transition: top 0.6s ease;
+    z-index: 1000;
+}
+
+.toast.tampil {
+    top: 25px;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #7e22ce;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #9d174d;
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.grid-mapel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.kartu {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    border: 2px solid #fbcfe8;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(192, 132, 252, 0.25);
+    border-color: #d8b4fe;
+}
+
+.ikon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.kartu h2 {
+    font-size: 1.2rem;
+    color: #6b21a8;
+    margin-bottom: 10px;
+}
+
+.kartu p {
+    font-size: 0.95rem;
+    color: #831843;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7e22ce;
+    font-size: 0.9rem;
+}
