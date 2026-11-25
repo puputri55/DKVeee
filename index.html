@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKVeee — Mata Pelajaran DKV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="welcome-toast" class="toast">
+        <span>Halo selamat datang! Selamat menjelajahi DKVeee ✨</span>
+        <button onclick="tutupNotif()">✕</button>
+    </div>
+
+    <header>
+        <div class="badge">SMK JURUSAN DKV • DKVEEE</div>
+        <h1>Eksplorasi Mata Pelajaran<br><span>Desain Komunikasi Visual</span></h1>
+        <p>Kumpulan mapel seru untuk mengasah kreativitas, estetika, dan skill visualmu.</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterMapel('semua', this)">Semua Kelas</button>
+            <button class="filter-btn" onclick="filterMapel('Kelas X', this)">Kelas X</button>
+            <button class="filter-btn" onclick="filterMapel('Kelas XI', this)">Kelas XI</button>
+            <button class="filter-btn" onclick="filterMapel('Kelas XII', this)">Kelas XII</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="grid-mapel" class="grid-mapel"></div>
+    </main>
+
+    <footer>
+        <p>DKVeee • Dibuat dengan nuansa ungu soft & pink soft</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
